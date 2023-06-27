@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consent Matters</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- <div class="container" id="initialScreen">
+        <div class="col-lg-6 m-auto">
+            <div class="row justify-content-center">
+                 <div class="row-sm-5">
+                    <h1 class="text-center" id="logo">SLIME.IO</h1>
+                </div>
+                <div class="card card-body">
+                    <p class="lead mt-4">Like what you see? <a href="/users/login">Follow my progress here</a></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row align-items-center vh-100">
+            <div class="col-6 mx-auto">
+                <div class="card shadow border">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h1 class="text-center" id="logo">Do you consent?</h1>        
+                        
+                        <div class="button-wrapper">
+                            <button onclick="success()" type="button" class="btn btn-outline-primary">Yes</button>
+                        </div>
+                        
+
+                        <div class="why">
+                            <button onclick="failure()" type="button" class="btn btn-outline-secondary">No</button>
+                        </div>    
+                        
+
+                        <div id="success" class="alert alert-dismissible alert-success">
+                            <button type="button" onclick="closeAlert1()" class="btn-close" data-bs-dismiss="alert"></button>
+                            <strong>Cheerio Then</strong>
+                        </div>
+
+                        <div id="failure" class="alert alert-dismissible alert-secondary">
+                            <button type="button" onclick="closeAlert2()" class="btn-close" data-bs-dismiss="alert"></button>
+                            <strong>Whoops!</strong> Looks like you clicked the wrong answer please try again.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
